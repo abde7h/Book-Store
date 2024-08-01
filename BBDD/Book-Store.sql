@@ -18,7 +18,7 @@ USE OnlineBookstore;
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY, -- Identificador único y autoincremental para cada usuario
     username VARCHAR(50) NOT NULL UNIQUE, -- Nombre de usuario, debe ser único
-    password VARCHAR(255) NOT NULL, -- Contraseña del usuario, se recomienda almacenar hashes de las contraseñas
+    password VARCHAR(255) NOT NULL, -- Contraseña del usuario
     email VARCHAR(100) NOT NULL UNIQUE, -- Correo electrónico del usuario, debe ser único
     first_name VARCHAR(100), -- Nombre del usuario
     last_name VARCHAR(100), -- Apellido del usuario
